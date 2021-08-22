@@ -1,4 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-ReactDOM.render(<h1>Hello World</h1>, document.getElementById("root"));
+import MyImage from "./assets/dog.jpg";
+import "./index.css";
+
+const App = () => {
+  return (
+    <div>
+      <div>Welcome to my-webpack-react-starter</div>
+      <img src={MyImage} />
+    </div>
+  );
+};
+
+ReactDOM.render(<App />, document.querySelector("#root"));
